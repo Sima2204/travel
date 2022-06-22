@@ -177,7 +177,7 @@ body {
 /* Header styles end */
 
 .preview {
-  background: url(/img/background1.jpg) no-repeat center;
+  background: url(../img/background1.jpg) no-repeat center;
   background-size: cover;
   width: 1440px;
   height: 765px;
@@ -383,7 +383,7 @@ body {
 .destinations__card1 {
   width: 800px;
   height: 800px;
-  background: url(/img/spain.jpg);
+  background: url(../img/spain.jpg);
   border-radius: 16px;
   flex: none;
   order: 0;
@@ -393,7 +393,7 @@ body {
 .destinations__card2 {
   width: 800px;
   height: 800px;
-  background: url(/img/japan.jpg);
+  background: url(../img/japan.jpg);
   border-radius: 16px;
   flex: none;
   order: 1;
@@ -403,7 +403,7 @@ body {
 .destinations__card3 {
   width: 800px;
   height: 800px;
-  background: url(/img/usa.jpg);
+  background: url(../img/usa.jpg);
   border-radius: 16px;
   flex: none;
   order: 2;
@@ -498,7 +498,7 @@ body {
 }
 
 .stories-background_image {
-  background: url(/img/background2.jpg) no-repeat center;
+  background: url(../img/background2.jpg) no-repeat center;
   background-size: cover;
   width: 1440px;
   height: 1331px;
@@ -531,7 +531,7 @@ body {
 .story-image1 {
   width: 400px;
   height: 250px;
-  background: url(/img/story-1.jpg) no-repeat center;
+  background: url(../img/story-1.jpg) no-repeat center;
   filter: drop-shadow(0px 4px 4px #0D606F);
   border-radius: 16px;
   object-fit: cover;
@@ -540,7 +540,7 @@ body {
 .story-image2 {
   width: 400px;
   height: 250px;
-  background: url(/img/story-2.jpg) no-repeat center;
+  background: url(../img/story-2.jpg) no-repeat center;
   filter: drop-shadow(0px 4px 4px #0D606F);
   border-radius: 16px;
   object-fit: cover;
@@ -549,7 +549,7 @@ body {
 .story-image3 {
   width: 400px;
   height: 250px;
-  background: url(/img/story-3.jpg) no-repeat center;
+  background: url(../img/story-3.jpg) no-repeat center;
   filter: drop-shadow(0px 4px 4px #0D606F);
   border-radius: 16px;
   object-fit: cover;
@@ -558,7 +558,7 @@ body {
 .story-image4 {
   width: 400px;
   height: 250px;
-  background: url(/img/story-4.jpg) no-repeat center;
+  background: url(../img/story-4.jpg) no-repeat center;
   filter: drop-shadow(0px 4px 4px #0D606F);
   border-radius: 16px;
   object-fit: cover;
