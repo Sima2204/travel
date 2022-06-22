@@ -1,1 +1,1 @@
-Travel#1 https://rolling-scopes-school.github.io/sima2204-JSFEPRESCHOOL2022Q2/travel/
+Travel#1 https://sima2204.github.io/travel/
