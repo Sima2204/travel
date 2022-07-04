@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Portal</title>
-    <link rel="icon" type="image-favicon" href="./img/svg/favicon.svg">
+    <link rel="icon" href="./img/svg/favicon.svg">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/index.js"></script>
 </head>
@@ -19,12 +19,12 @@
             <div class="header_navigation">
         
                 <figure class="logo">
-                    <a href="/" class="header-logo_link">
+                    <a href="https://rolling-scopes-school.github.io/sima2204-JSFEPRESCHOOL2022Q2/travel/" class="header-logo_link">
                         <img src="./img/svg/logo.svg" alt="logo">
                     </a>
                 </figure>
     
-                <nav class="nav">
+                <nav class="header__nav">
                     <ul class="nav_list">
                         <li class="header_item">
                             <a href="#how-it-works" class="header_link">How It Works</a>
@@ -40,7 +40,7 @@
                         </li>
                     </ul>
                 </nav>
-    
+
                 <div class="login_button">
                     <p class="header_login">
                         <button type="submit" class="header_login_button">
@@ -48,6 +48,54 @@
                         </button>
                     </p>
                 </div>
+
+                <div class="logo_mobile">
+                    <figure class="logo_mob_obj">
+                        <a href="https://rolling-scopes-school.github.io/sima2204-JSFEPRESCHOOL2022Q2/travel/" class="header-logo_link">
+                            <img src="./img/svg/logo-mob.svg" alt="logo-mob" width="29" height="30">
+                        </a>
+                    </figure>
+                </div>
+
+                <nav class="header__nav-mob">
+
+                    <ul class="nav_list">
+                        <li class="header_item">
+                            <a href="#how-it-works" class="header_link">How It Works</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#plan-your-trip" class="header_link">Plan Your Trip</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#destinations" class="header_link">Destinations</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#travel-stories" class="header_link">Travel Stories</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#!" class="header_link">Account</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#social-media" class="header_link">Social Media</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="header__nav-close">
+                        <span class="header__nav-close-line"></span>
+                        <span class="header__nav-close-line"></span>
+                    </div>
+
+                </nav>
+
+                <div class="header__burger burger">
+                    <div class="burger_wrap">
+                        <span class="burger__line burger__line_first"></span>
+                        <span class="burger__line burger__line_second"></span>
+                        <span class="burger__line burger__line_third"></span>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -58,28 +106,32 @@
 
         <section class="preview" id="plan-your-trip">
 
-            <div class="preview-box">
-                <div class="prewiew_element">
+            <div class="preview-gradient">
 
-                    <h1 class="preview_title-text">
-                        Explore the beauty of the World
-                    </h1>
-
-                    <div class="preview_info">
-                        <h3 class="preview_info-text">
-                            Recieve personalized recommendations for countries, hotels, activities and more
-                        </h3>
+                <div class="preview-box">
+                    <div class="prewiew_element">
+    
+                        <h1 class="preview_title-text">
+                            Explore the beauty of the World
+                        </h1>
+    
+                        <div class="preview_info">
+                            <h3 class="preview_info-text">
+                                Recieve personalized recommendations for countries, hotels, activities and more
+                            </h3>
+                        </div>
+        
+                        <form class="preview_search">
+                            <fieldset class="preview_search-wrapper">
+                                <input type="text" name="user-like-to-do" class="search-form_field" placeholder="What would you like to do?">
+                                <button type="submit" class="search-form_submit">
+                                Start Planning
+                                </button>
+                            </fieldset>                    
+                        </form>
+    
                     </div>
     
-                    <form class="preview_search">
-                        <fieldset class="preview_search-wrapper">
-                            <input type="text" name="user-like-to-do" class="search-form_field" placeholder="What would you like to do?">
-                            <button type="submit" class="search-form_submit">
-                            Start Planning
-                            </button>
-                        </fieldset>                    
-                    </form>
-
                 </div>
 
             </div>
@@ -98,6 +150,7 @@
                     <div class="box__tell-us">
                         <p class="squares">
                             <img src="./img/svg/step-1.svg" alt="Tell us what you want to do" class="step1__vector">
+                            <img src="./img/svg/step-1-mob.svg" alt="Tell us what you want to do" class="step1__vector-mob">
                         </p>   
                         <h3 class="steps__text">
                             Tell us what you want to do
@@ -107,6 +160,7 @@
                     <div class="box__share-us">
                         <p class="squares">
                             <img src="./img/svg/step-2.svg" alt="Tell us what you want to do" class="step2__vector">
+                            <img src="./img/svg/step-2-mob.svg" alt="Tell us what you want to do" class="step2__vector-mob">
                         </p>   
                         <h3 class="steps__text">
                             Share us preferable dates
@@ -116,12 +170,27 @@
                     <div class="box__recomendation">
                         <p class="squares">
                             <img src="./img/svg/step-3.svg" alt="Tell us what you want to do" class="step3__vector">
+                            <img src="./img/svg/step-3-mob.svg" alt="Tell us what you want to do" class="step3__vector-mob">
                         </p>   
                         <h3 class="steps__text">
                             We will give you recommendations
                         </h3>
                     </div>
 
+                </div>
+
+                <div class="steps__text-mob">
+                    <div class="text__wrapper">
+                        <h3 class="steps__text-mob1">
+                            Tell us what you want to do
+                        </h3>
+                        <h3 class="steps__text-mob2">
+                            Share us preferable dates
+                        </h3>
+                        <h3 class="steps__text-mob3">
+                            We will give you recommendations
+                        </h3>
+                    </div>
                 </div>
 
             </div>
@@ -142,7 +211,6 @@
                             SPAIN
                         </figcaption>
                     </figure>
-                    
                     <figure class="destinations__card2">
                         <figcaption class="destinations__card-title">
                             JAPAN
@@ -153,6 +221,26 @@
                             USA
                         </figcaption>
                     </figure>
+                    <figure class="destinations__card1-mob">
+                        <figcaption class="destinations__card-title">
+                            SPAIN
+                        </figcaption>
+                        <div class="arrows_slider">
+                            <button type="submit" class="arrow-left-button">
+                                <img src="./img/svg/arrow-left-button.svg" alt="Arrow" class="arrow-left-vector">
+                            </button>
+                            <button type="submit" class="arrow-right-button">
+                                <img src="./img/svg/arrow-right-button.svg" alt="Arrow" class="arrow-right-vector">
+                            </button>
+                        </div>
+                        <div class="slider-mob">
+                            <div class="slider__elements">
+                                <p class="element-selected"></p>
+                                <p class="element-not_selected"></p> 
+                                <p class="element-not_selected"></p>                        
+                            </div>
+                        </div>
+                    </figure>
                 </div>
     
                 <div class="slider">
@@ -162,12 +250,18 @@
                         <p class="element-not_selected"></p>                        
                     </div>
                 </div>
-    
+
                 <div class="find-more">
                         <button type="submit" class="find-more__submit">
                             <img src="./img/svg/arrow-right.svg" alt="Arrow" class="arrow-right">
                             Find More
                         </button>
+                </div>
+                <div class="find-more-mob">
+                    <button type="submit" class="find-more__submit-mob">
+                        <img src="./img/svg/arrow-right-mob.svg" alt="Arrow" class="arrow-right-mob">
+                        Find More
+                    </button>
                 </div>
 
             </div>
@@ -197,6 +291,9 @@
                                 <p class="story__text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
                                 </p>
+                                <p class="story__text-mob">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...
+                                </p>
                                 <a href="#!" class="read-more">
                                     <b>Read More</b>
                                 </a>
@@ -213,6 +310,9 @@
                                 </h3>
                                 <p class="story__text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...    
+                                </p>
+                                <p class="story__text-mob">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...
                                 </p>
                                 <a href="#!" class="read-more">
                                     <b>Read More</b>
@@ -231,6 +331,9 @@
                                 <p class="story__text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
                                 </p>
+                                <p class="story__text-mob">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...
+                                </p>
                                 <a href="#!" class="read-more">
                                     <b>Read More</b>
                                 </a>
@@ -248,6 +351,9 @@
                                 <p class="story__text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
                                 </p>
+                                <p class="story__text-mob">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...
+                                </p>
                                 <a href="#!" class="read-more">
                                     <b>Read More</b>
                                 </a>
@@ -257,6 +363,12 @@
                         <div class="see-more">
                             <button type="submit" class="see-more__submit">
                                 <img src="./img/svg/arrow-right.svg" alt="Arrow" class="arrow-right">
+                                See More
+                            </button>
+                        </div>
+                        <div class="see-more-mob">
+                            <button type="submit" class="see-more__submit">
+                                <img src="./img/svg/arrow-right-mob.svg" alt="Arrow" class="arrow-right-mob">
                                 See More
                             </button>
                         </div>
@@ -271,7 +383,7 @@
 
     </main>
     
-    <footer class="footer">
+    <footer class="footer" id="social-media">
 
         <div class="footer__data">
 
@@ -315,6 +427,6 @@
         </div>
 
     </footer> 
-
+    <script src="./js/main.js"></script>
 </body>
 </html>
