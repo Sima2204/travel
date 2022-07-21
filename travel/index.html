@@ -72,7 +72,7 @@
                         <li class="header_item">
                             <a href="#travel-stories" class="header_link">Travel Stories</a>
                         </li>
-                        <li class="header_item">
+                        <li class="header_item_acc">
                             <a href="#!" class="header_link">Account</a>
                         </li>
                         <li class="header_item">
@@ -100,6 +100,8 @@
 
         </div>
 
+        
+        
     </header>
 
     <main class="main">
@@ -204,43 +206,60 @@
                     POPULAR DESTINATIONS
                 </h2>
                 
-    
-                <div class="destinations__cards">
-                    <figure class="destinations__card1">
-                        <figcaption class="destinations__card-title">
-                            SPAIN
-                        </figcaption>
-                    </figure>
-                    <figure class="destinations__card2">
-                        <figcaption class="destinations__card-title">
-                            JAPAN
-                        </figcaption>
-                    </figure>
-                    <figure class="destinations__card3">
-                        <figcaption class="destinations__card-title">
-                            USA
-                        </figcaption>
-                    </figure>
-                    <figure class="destinations__card1-mob">
-                        <figcaption class="destinations__card-title">
-                            SPAIN
-                        </figcaption>
-                        <div class="arrows_slider">
+                <div class="carousel">
+                    <div class="destinations__cards">
+
+                        <div class="item1">
+                            <figure class="destinations__card1">
+                                <figcaption class="destinations__card-title">
+                                    SPAIN
+                                </figcaption>
+                            </figure>
+                        </div>
+                        
+                        <div class="item2">
+                            <figure class="destinations__card2">
+                                <figcaption class="destinations__card-title">
+                                    JAPAN
+                                </figcaption>
+                            </figure>
+                        </div>
+                        
+                        <div class="item3">
+                            <figure class="destinations__card3">
+                                <figcaption class="destinations__card-title">
+                                    USA
+                                </figcaption>
+                            </figure>
+                        </div>
+                        
+                        <div class="destinations__card1-mob">
+                            
+                            <div class="picture2">
+                                <div class="destinations__card-title">
+                                    SPAIN
+                                </div>
+                            </div>
+                            </div>                            
+                        
                             <button type="submit" class="arrow-left-button">
-                                <img src="./img/svg/arrow-left-button.svg" alt="Arrow" class="arrow-left-vector">
+                                <img src="./img/svg/arrow-left-button-mob.svg" alt="Arrow" class="arrow-left-vector">
                             </button>
                             <button type="submit" class="arrow-right-button">
-                                <img src="./img/svg/arrow-right-button.svg" alt="Arrow" class="arrow-right-vector">
+                                <img src="./img/svg/arrow-right-button-mob.svg" alt="Arrow" class="arrow-right-vector">
                             </button>
-                        </div>
-                        <div class="slider-mob">
-                            <div class="slider__elements">
-                                <p class="element-selected"></p>
-                                <p class="element-not_selected"></p> 
-                                <p class="element-not_selected"></p>                        
+                            
+                            <div class="slider-mob">
+                                <div class="slider__elements">
+                                    <p class="element-not_selected"></p>
+                                    <p class="element-selected"></p> 
+                                    <p class="element-not_selected"></p>                        
+                                </div>
                             </div>
+                            
                         </div>
-                    </figure>
+                    </div>
+                
                 </div>
     
                 <div class="slider">
@@ -427,6 +446,37 @@
         </div>
 
     </footer> 
+
+    
+    <div class="pop-up">
+        <div class="pop-up_container">
+            <h2 class="pop-up_header">Log in to your account</h2>
+            <button class="pop-up_button button-facebook"><img src="./img/logo/facebook.png" alt="facebook"> Sign In with Facebook</button>
+            <button class="pop-up_button button-google"><img src="./img/logo/google.png" alt="google">Sign In with Google</button>
+            <div class="pop-up_line">
+                <div class="pop-up_lines"></div> 
+                or 
+                <div class="pop-up_lines"></div>
+            </div>
+            <div class="pop-up_input">
+                <h4>E-mail</h4>
+                <input id="user-email" type="text" class="pop-up_imput_text">
+            </div>
+            <div class="pop-up_input">
+                <h4>Password</h4>
+                <input id="user-password" type="text" class="pop-up_imput_text">
+            </div>
+            <button class="pop-up_button button-sign-in">Sign In</button>
+            <a class="pop-up_forgot" href="#!" target="_blank">Forgot Your Password?</a>
+            <div class="pop-up_line"> 
+                <div class="long-line"></div>
+            </div>
+            <div class="pop-up_register">Don’t have an account? 
+                <a id="register" class="pop-up_register-button" href="#!">Register</a>
+            </div>
+        </div>
+    </div>
+    
     <script src="./js/main.js"></script>
 </body>
 </html>

@@ -53,6 +53,19 @@
        url('../fonts/aleo-v11-latin-700italic.svg#Aleo') format('svg'); /* Legacy iOS */
 }
 
+/* red-hat-text-regular - latin */
+@font-face {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/red-hat-text-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/red-hat-text-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/red-hat-text-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/red-hat-text-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/red-hat-text-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/red-hat-text-v11-latin-regular.svg#RedHatText') format('svg'); /* Legacy iOS */
+}
 /* red-hat-text-500 - latin */
 @font-face {
   font-family: 'Red Hat Text';
@@ -177,6 +190,220 @@ body {
 
 .login_button:hover, .login_button:focus, .login_button:active {
   opacity: .75;
+}
+
+.pop-up {
+  display: none;
+}
+
+.pop-up_active {
+  position: fixed;
+  top: 80px;
+  left: calc(50% - 325px);
+  width: 650px;
+  max-height: 660px;
+  background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: popup;
+  animation-duration: 0.5s;
+}
+
+@keyframes popup {
+  from {top: -650px;}
+  to {top: 80px;}
+} 
+
+.pop-up_container {
+  width: 564px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pop-up_header {
+  margin: 25px 0;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #0D606F;
+  align-self: center;
+}
+
+.pop-up_button {
+  width: 560px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 3px rgb(13 96 111 / 8%), 0px 2px 3px rgb(13 96 111 / 16%);
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-facebook {
+  margin-top: 5px;
+  background-color: #1877F2;
+  color: #FFFFFF;
+}
+
+.button-google {
+  margin-top: 18px;
+  color: #0D606F;
+}
+
+.pop-up_button img {
+  margin-right: 16px;
+}
+
+.pop-up_line {
+  margin-top: 30px;
+  width: 590px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(13, 96, 111, 0.5);
+}
+
+.pop-up_lines {
+  align-self: center;
+  margin-left: 9px;
+  margin-right: 9px;
+  width: 262px;
+  height: 1px;
+  background-color: #0D606F;
+}
+
+.pop-up_input {
+  margin-top: 8px;
+  margin-bottom: 12px;
+  width: 560px;
+  height: 80px;
+}
+
+.pop-up_input h4 {
+  margin: 0 0;
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0D606F;
+}
+
+.pop-up_input input {
+  margin-top: 5px;
+  width: 560px;
+  height: 54px;
+  background: #FFFFFF;
+  box-shadow: inset 0px 0px 3px rgb(13 96 111 / 8%), inset 0px 2px 3px rgb(13 96 111 / 16%);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0D606F;
+}
+
+.pop-up_imput_text {
+  padding-left: 10px;
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.button-sign-in {
+  margin-top: 12px;
+  background: #0D606F;
+  box-shadow: 0px 0px 3px rgb(13 96 111 / 8%), 0px 2px 3px rgb(13 96 111 / 16%);
+  border-radius: 10px;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.pop-up_forgot {
+  margin-top: 10px;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #0D606F;
+  text-shadow: 0px 2px 3px rgb(255 255 255 / 16%);
+}
+
+.pop-up_line {
+  margin-top: 30px;
+  width: 590px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(13, 96, 111, 0.5);
+}
+
+.long-line {
+  margin-top: -5px;
+  width: 95%;
+  height: 1px;
+  background-color: #0D606F;
+}
+
+.pop-up_register {
+  margin-top: 15px;
+  margin-bottom: 23px;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(13, 96, 111, 0.5);
+  text-shadow: 0px 2px 3px rgb(255 255 255 / 16%);
+}
+
+.pop-up_register a {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #0D606F;
+  text-shadow: 0px 2px 3px rgb(255 255 255 / 16%);
 }
 
 .header__burger {
@@ -393,6 +620,30 @@ body {
   overflow: hidden;
 }
 
+.item1 {
+  height: 800px;
+  width: 800px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.item2 {
+  height: 800px;
+  width: 800px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.item3 {
+  height: 800px;
+  width: 800px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .destinations__title {
   text-align: center;
   font-family: 'Red Hat Text';
@@ -404,10 +655,73 @@ body {
   margin-bottom: 46px;
 }
 
+.carousel {
+  position: relative;
+  left: 0;
+}
+
+.to-left {
+  animation-name: move-left;
+  animation-duration: 1s;
+}
+
+@keyframes move-left {
+  from {left: 0px;}
+  to {left: 540px;}
+}
+
+.to-right {
+  animation-name: move-right;
+  animation-duration: 1s;
+}
+
+@keyframes move-right {
+  from {left: 0px;}
+  to {left: -540px;}
+}
+
+.from-left {
+  animation-name: move-from-left;
+  animation-duration: 1s;
+  animation-direction: reverse;
+}
+
+@keyframes move-from-left {
+  from {left: -540px;}
+  to {left: 0px;}
+}
+
+.from-right {
+  animation-name: move-from-right;
+  animation-duration: 1s;
+  animation-direction: reverse;
+}
+
+@keyframes move-from-right {
+  from {left: 540px;}
+  to {left: 0px;}
+}
+
 .destinations__cards {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 60px;
+  margin-bottom: 24px;
+}
+
+.cards-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 60px;
+  margin-bottom: 24px;
+}
+
+.cards-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   gap: 60px;
   margin-bottom: 24px;
 }
@@ -445,8 +759,19 @@ body {
 .destinations__card1-mob {
   display: none;
 }
-
+.picture-mob{
+  display: none;
+}
+.arrow-left-button {
+  display: none;
+}
+.arrow-right-button {
+  display: none;
+}
 .destinations__card-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   font-family: 'Red Hat Text';
   font-style: normal;
   font-weight: 500;
@@ -827,7 +1152,211 @@ footer {
     list-style-type: none;
     gap: 10px;
   }
+
+  .pop-up {
+    display: none;
+  }
+  .pop-up_active{
+    display: none;
+  }
+  .mob-pop-up_active {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 390px;
+    max-height: 660px;
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: popup;
+    animation-duration: 0.5s;
+  }
+  @keyframes popup {
+    from {top: -650px;}
+    to {top: 80px;}
+  } 
+  .pop-up_container {
+    width: 320px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pop-up_header {
+    margin: 25px 0;
+    font-family: "Aleo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color: #0D606F;
+    align-self: center;
+  }
+  .pop-up_button {
+    width: 300px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Red Hat Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 3px rgb(13 96 111 / 8%), 0px 2px 3px rgb(13 96 111 / 16%);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  .button-facebook {
+    margin-top: 5px;
+    background-color: #1877F2;
+    color: #FFFFFF;
+  }
+  .button-google {
+    margin-top: 18px;
+    color: #0D606F;
+  }
+  .pop-up_button img {
+    margin-right: 16px;
+  }
+  .pop-up_line {
+    margin-top: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Aleo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(13, 96, 111, 0.5);
+  }
+  .pop-up_lines {
+    align-self: center;
+    margin-left: 9px;
+    margin-right: 9px;
+    width: 262px;
+    height: 1px;
+    background-color: #0D606F;
+  }
+  .pop-up_input {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    width: 300px;
+    height: 80px;
+  }
+  .pop-up_input h4 {
+    margin: 0 0;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0D606F;
+  }
+  .pop-up_input input {
+    margin-top: 5px;
+    width: 300px;
+    height: 54px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 3px rgb(13 96 111 / 8%), inset 0px 2px 3px rgb(13 96 111 / 16%);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0D606F;
+  }
+  .pop-up_imput_text {
+    padding-left: 10px;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .button-sign-in {
+    margin-top: 12px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgb(13 96 111 / 8%), 0px 2px 3px rgb(13 96 111 / 16%);
+    border-radius: 10px;
+    font-family: "Red Hat Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+  }
+  .pop-up_forgot {
+    margin-top: 10px;
+    font-family: "Aleo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #0D606F;
+    text-shadow: 0px 2px 3px rgb(255 255 255 / 16%);
+  }
+  .pop-up_line {
+    margin-top: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Aleo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(13, 96, 111, 0.5);
+  }
+  .long-line {
+    margin-top: -5px;
+    width: 95%;
+    height: 1px;
+    background-color: #0D606F;
+  }
+  .pop-up_register {
+    margin-top: 15px;
+    margin-bottom: 23px;
+    font-family: "Aleo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(13, 96, 111, 0.5);
+    text-shadow: 0px 2px 3px rgb(255 255 255 / 16%);
+  }
+  .pop-up_register a {
+    font-family: "Aleo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    color: #0D606F;
+    text-shadow: 0px 2px 3px rgb(255 255 255 / 16%);
+  }
   .header_item {
+    text-align: end;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  .header_item_acc{
     text-align: end;
     width: 100%;
     margin-right: 0;
@@ -1118,44 +1647,110 @@ footer {
     gap: 0;
     margin-bottom: 10px;
   }
-  .destinations__card1{
+  .item1{
     display: none;
   }
-  .destinations__card2{
+  .item2{
     display: none;
   }
-  .destinations__card3{
+  .item3{
     display: none;
   }
   .destinations__card1-mob {
+    display: flex;
+    width: 360px;
+    height: 210px;
+    border-radius: 16px;
+    flex: none;
+    overflow: hidden;
+  }
+  .slider-img-mob {
+    width: 2000px;
+    display: flex;
+    flex-direction: row;
+  }
+  .picture1 {
+    border-radius: 16px;
+    position: relative;
+    top: 0;
     display: block;
     width: 360px;
     height: 210px;
-    background: url(../img/spain-mob.jpg);
-    border-radius: 16px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    background: url(../img/japan.jpg) no-repeat center;
+    background-size: cover;
   }
+  .picture2 {
+    border-radius: 16px;
+    position: relative;
+    top: 0;
+    display: block;
+    width: 390px;
+    height: 210px;
+    background: url(../img/spain-mob.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .picture3 {
+    border-radius: 16px;
+    position: relative;
+    top: 0;
+    display: block;
+    width: 360px;
+    height: 210px;
+    background: url(../img/usa.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .dest-move-left {
+    animation-name: move-left-mob;
+    animation-duration: 2s;
+  }
+  @keyframes move-left-mob {
+    from {left: 0px;}
+    to {left: 360px;}
+  }
+  .dest-move-right {
+    animation-name: move-right-mob;
+    animation-duration: 2s;
+  }
+  @keyframes move-right-mob {
+    from {left: 0px;}
+    to {left: -360px;}
+  }
+
+  .dest-move-from-left {
+    animation-name: move-from-left-mob;
+    animation-duration: 2s;
+  }
+  @keyframes move-from-left-mob {
+    from {left: 360px;}
+    to {left: 0px;}
+  }
+  .dest-move-from-right {
+    animation-name: move-from-right-mob;
+    animation-duration: 2s;
+  }
+  @keyframes move-from-right-mob {
+    from {left: 0px;}
+    to {left: -360px;}
+  }
+
   .destinations__card-title {
+    top: 8px;
+    left: 15px;
+    position: absolute;
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
     color: #FFFFFF;
-    padding-left: 15px;
-    padding-top: 8px;
-  }
-  .arrows_slider {
-    padding-top: 56px;
-    margin: 0 auto;
-    width: 350px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    padding-left: 0;
+    padding-top: 0;
   }
   .arrow-left-button {
+    display: block;
+    top: 90px;
+    left: 5px;
+    position: absolute;
     height: 30px;
     width: 30px;
     border: none;
@@ -1163,6 +1758,10 @@ footer {
     cursor: pointer;
   }
   .arrow-right-button {
+    display: block;
+    top: 90px;
+    left: 325px;
+    position: absolute;
     height: 30px;
     width: 30px;
     border: none;
@@ -1173,13 +1772,17 @@ footer {
     display: none;
   }
   .slider-mob {
+    top: 190px;
+    left: 162px;
+    position: absolute;
     display: block;
     margin: 0 auto;
     width: 36px;
     height: 8px;
-    padding-top: 70px;
+    padding-top: 0;
   }
   .slider__elements {
+    position: absolute;
     width: 36px;
     height: 8px;
     display: flex;
